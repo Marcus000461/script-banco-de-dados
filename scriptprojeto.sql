@@ -1,0 +1,4 @@
+--Usuario(n° da matricula, nome, contato, curso,)
+-- Obra(N° Classificação, Autores,Título, genero, Cutter, Palavras chaves)
+-- Exemplar(Dados da obra, Unidade de informação,Situação Disponivel/Excluido, Compra/doação, Valor, estoque)
+-- Empréstimo (Dados do usuário, número do exemplar, prazo,)
