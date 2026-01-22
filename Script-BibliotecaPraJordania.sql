@@ -66,4 +66,4 @@ CREATE TABLE palavra_chave (
     id_palavra SERIAL PRIMARY KEY,
     id_exemplar INT REFERENCES exemplar(id_exemplar) ON DELETE CASCADE,
     descricao VARCHAR(100) NOT NULL
-);
+); s
