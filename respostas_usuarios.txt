@@ -1,0 +1,47 @@
+--1- Como consultar quais exemplares estão disponíveis para empréstimo?
+
+	--o sistema vai consultar a tabela exemplar para verificar a disponibilidade .
+
+--2- É possível pesquisar por título, autor, assunto ou palavra-chave?
+
+--sim pois todas essas informações estão disponíveis respectivamente nas tabelas obra, exemplar e palavra chave deste modo viabilizando a pesquisa.
+
+
+--3- O usuário consegue visualizar a localização física da obra na biblioteca?
+
+--sim é possível achar a localização do livro na biblioteca através do código cutter disponibilizado na tabela exemplar
+
+
+--4- Como realizar uma reserva de um livro emprestado?
+
+--o usuário pode entrar numa lista de espera onde o sistema vai consultar a tabela reserva para retornar o tempo de espera
+--e sua posição na fila.
+
+
+--5- O sistema informa a posição na fila de espera da reserva?
+
+--na tabela reserva é possível a consulta da lista de espera para o empréstimo de um livro fora de estoque.
+
+
+--6- É possível consultar meus empréstimos ativos e a data de devolução?
+
+-- sim é possível pela tabela reserva através das colunas data de devolução e empréstimos ativos
+
+
+--7- O usuário recebe alerta de devolução ou atraso?
+
+--através da coluna adimplente na tabela reserva o sistema pode verificar se o empréstimo esta em ida ou n e mandar um e-mail automático para o usuário
+
+
+--8- É possível renovar um empréstimo pelo sistema?
+
+--sim é possível pela tabela reserva que possui a coluna renovação
+
+
+--9- O sistema mostra o histórico de empréstimos do usuário?
+
+--sim a tabela usuário armazena o histórico na coluna histórico 
+
+--10- O usuário consegue ver sugestões de obras relacionadas?
+
+--sim pela tabela palavras chave que faz esse intermédio
