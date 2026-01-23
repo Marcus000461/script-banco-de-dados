@@ -107,18 +107,29 @@ INSERT INTO usuario (nome, email, login, validade_matricula, adimplente) VALUES
 ('Igor Tuz', 'igor@email.com', 'igort', '2026-12-01', false), 
 ('Julia Aa', 'julia@email.com', 'juliaa', '2027-02-14', true);
 
--- Exemplares
-INSERT INTO exemplar (nome_da_obra, autor, disponibilidade, codigo_exemplar, genero) VALUES 
-('Dom Casmurro', 'Machado de Assis', true, 'EX001', 'Clássico'), 
-('O Hobbit', 'J.R.R Tolkien', true, 'EX002', 'Fantasia'),
-('1984', 'George Orwell', true, 'EX003', 'Distopia'),
-('Sapiens', 'Yuval Harari', false, 'EX004', 'História'),
-('Duna', 'Frank Herbert', true, 'EX005', 'Ficção Científica'), 
-('A Hora da Estrela', 'Clarice Lispector', true, 'EX006', 'Literatura'),
-('Clean Code', 'Robert Martin', false, 'EX007', 'Tecnologia'), 
-('Drácula', 'Bram Stoker', true, 'EX008', 'Terror'),
-('Sherlock Holmes', 'Arthur Conan Doyle', true, 'EX009', 'Mistério'), 
-('Hamlet', 'Shakespeare', true, 'EX010', 'Teatro');
+-- Exemplares (Versão Completa)
+INSERT INTO exemplar (
+    nome_da_obra, 
+    autor, 
+    disponibilidade, 
+    codigo_exemplar, 
+    genero, 
+    assunto, 
+    cutter, 
+    data_lancamento, 
+    cidade, 
+    estado
+) VALUES  
+('Dom Casmurro', 'Machado de Assis', true, 'EX001', 'Clássico', 'A dúvida sobre a traição de Capitu.', 'M149d', '1899-01-01', 'Rio de Janeiro', 'RJ'),  
+('O Hobbit', 'J.R.R Tolkien', true, 'EX002', 'Fantasia', 'A jornada de Bilbo Bolseiro.', 'T649h', '1937-09-21', 'Londres', 'UK'),
+('1984', 'George Orwell', true, 'EX003', 'Distopia', 'Vigilância estatal e totalitarismo.', 'O79n', '1949-06-08', 'Londres', 'UK'),
+('Sapiens', 'Yuval Harari', false, 'EX004', 'História', 'A evolução da humanidade.', 'H254s', '2011-01-01', 'Jerusalém', 'IL'),
+('Duna', 'Frank Herbert', true, 'EX005', 'Ficção Científica', 'Conflitos políticos no planeta Arrakis.', 'H536d', '1965-08-01', 'Filadélfia', 'PA'),  
+('A Hora da Estrela', 'Clarice Lispector', true, 'EX006', 'Literatura', 'A vida miserável de Macabéa.', 'L769h', '1977-10-26', 'Rio de Janeiro', 'RJ'),
+('Clean Code', 'Robert Martin', false, 'EX007', 'Tecnologia', 'Boas práticas de programação.', 'M381c', '2008-08-01', 'Boston', 'MA'),  
+('Drácula', 'Bram Stoker', true, 'EX008', 'Terror', 'O confronto entre Van Helsing e o vampiro.', 'S875d', '1897-05-26', 'Westminster', 'UK'),
+('Sherlock Holmes', 'Arthur Conan Doyle', true, 'EX009', 'Mistério', 'As aventuras do detetive de Baker Street.', 'D754s', '1892-10-14', 'Londres', 'UK'),  
+('Hamlet', 'Shakespeare', true, 'EX010', 'Teatro', 'A vingança do príncipe da Dinamarca.', 'S527h', '1603-01-01', 'Stratford', 'UK');
 
 -- Interesse
 INSERT INTO interesse (id_usuario, id_exemplar) VALUES 
